@@ -2,8 +2,6 @@ name: Update gist
 on:
   repository_dispatch:
     types: [build-event]
-  schedule:
-    - cron: "0 0 1 * *"
   workflow_dispatch:
 jobs:
   update-gist:
