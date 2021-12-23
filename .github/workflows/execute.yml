@@ -16,4 +16,4 @@ jobs:
 
       - run: yarn install
 
-      - run: yarn execute
+      - run: GH_TOKEN=${{ secrets.GH_TOKEN }} GIST_ID=${{ secrets.GIST_ID }} yarn execute
